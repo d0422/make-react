@@ -1,0 +1,27 @@
+{
+  "name": "make-react",
+  "version": "1.0.0",
+  "description": "React만들어보기",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0422/make-react.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d0422/make-react/issues"
+  },
+  "homepage": "https://github.com/d0422/make-react#readme",
+  "devDependencies": {
+    "vite": "^4.5.0"
+  },
+  "type": "module"
+}
