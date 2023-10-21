@@ -1,4 +1,9 @@
 import { createElement } from './createElement';
-export const React = {
+import { render } from './render';
+
+const React = {
   createElement,
+  render,
 };
+
+export default React;

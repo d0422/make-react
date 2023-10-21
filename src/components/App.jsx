@@ -1,4 +1,4 @@
-import { React } from '../core/React';
+import React from '../core/React';
 import { Header } from './Header';
 
 const App = () => {
