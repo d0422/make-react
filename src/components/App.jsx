@@ -1,9 +1,10 @@
 import { React } from '../core/React';
+import { Header } from './Header';
 
 const App = () => {
   return (
     <div className="asdf">
-      <h3>제목</h3>
+      <Header />
       <span>내용</span>
     </div>
   );
