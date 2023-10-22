@@ -1,17 +1,16 @@
 import React from '../core/React';
-import { rerender } from '../core/render';
+import { useState } from '../core/useState';
 import { Header } from './Header';
 
-let count = 0;
 const App = () => {
+  const [count, setCount] = useState(0);
   return (
     <div>
       <Header />
       <span>{count}</span>
       <button
         onclick={() => {
-          count++;
-          rerender();
+          setCount(count + 1);
         }}
       >
         Click me!
