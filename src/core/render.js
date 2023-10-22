@@ -1,6 +1,7 @@
 import App from '../components/App';
 import { makeDOM } from './makeDOM';
 import { updateDOM } from './updateDOM';
+import { initializeIndex } from './useState';
 
 let prev; //이전의 virtual DOM
 let root; //최상단 root요소
@@ -17,6 +18,7 @@ export const render = (content, container) => {
 };
 
 export const rerender = () => {
+  initializeIndex(); //리렌더시 useState의 index를 초기화
   const updateElement = App();
   updateDOM(root, prev, updateElement);
   prev = updateElement; //업데이트가 끝나면, 요소 업데이트
