@@ -1,11 +1,21 @@
 import React from '../core/React';
+import { rerender } from '../core/render';
 import { Header } from './Header';
 
+let count = 0;
 const App = () => {
   return (
-    <div className="asdf">
+    <div>
       <Header />
-      <span>내용</span>
+      <span>{count}</span>
+      <button
+        onclick={() => {
+          count++;
+          rerender();
+        }}
+      >
+        Click me!
+      </button>
     </div>
   );
 };
