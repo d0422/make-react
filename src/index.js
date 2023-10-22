@@ -3,8 +3,6 @@ import React from './core/React';
 import { Change } from './components/Change';
 
 const app = document.getElementById('root');
-React.render(App(), app);
-setTimeout(() => {
-  app.innerHTML = '';
-  React.render(Change(), app);
-}, 3000);
+const prev = App();
+React.render(prev, app);
+setTimeout(() => React.updateDOM(app, prev, Change()), 3000);
