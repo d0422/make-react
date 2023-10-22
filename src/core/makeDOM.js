@@ -23,5 +23,6 @@ export const makeDOM = (element) => {
       DOMElement.appendChild(makeDOM(child));
     });
   }
+  element.ref=DOMElement //여기 추가!!
   return DOMElement; //최종 생성된 DOM요소를 반환한다.;
 };
