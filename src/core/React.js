@@ -1,11 +1,11 @@
 import { createElement } from './createElement';
 import { render } from './render';
-import { updateDOM } from './updateDOM';
+import { rerender } from './render';
 
 const React = {
   createElement,
   render,
-  updateDOM,
+  rerender,
 };
 
 export default React;
