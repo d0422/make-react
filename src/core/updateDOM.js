@@ -1,6 +1,8 @@
 import {
+  createArray,
   getDeleteKeysArray,
   getDiffKeysObject,
+  getLongerArrayLength,
   getNewKeysObject,
 } from '../utils';
 import { makeDOM } from './makeDOM';
@@ -32,14 +34,14 @@ const updateAttributes = (target, newProps, oldProps) => {
 };
 
 export const updateDOM = (parent, prev, cur, index = 0) => {
-  if (prev && !cur) {
+  if (prev && cur === null) {
     if (typeof prev === 'string' || typeof prev === 'number') {
       return (parent.innerHTML = '');
     }
     return prev.ref?.remove();
   }
 
-  if (!prev && cur) {
+  if (prev === null && cur) {
     return parent.appendChild(makeDOM(cur));
   }
 
