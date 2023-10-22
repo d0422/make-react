@@ -12,3 +12,5 @@ vite 번들러, JSX를 사용해 virtual DOM, useState를 구현해보고자합�
 [리액트를 만들면서 이해해보자 (2) - render, rerender](https://0422.tistory.com/318)
 
 [리액트를 만들면서 이해해보자 (3) - virtual dom과 diffing](https://0422.tistory.com/319)
+
+[리액트를 만들면서 이해해보자 (4) - useState](https://0422.tistory.com/320)
